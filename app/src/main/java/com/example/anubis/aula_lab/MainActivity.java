@@ -18,10 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nome = (EditText) findViewById(R.id.edit_name);
-        sobrenome = (EditText) findViewById(R.id.edit_sobrenome);
-        getName = (Button) findViewById(R.id.get_name);
 
-        
+
+
     }
 }
