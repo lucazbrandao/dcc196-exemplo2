@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnProfessor;
     Button btnStudent;
     private EditText edtNome;
-    EditText sobrenome;
+    public static final String PESSOA_NOME = "nome";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

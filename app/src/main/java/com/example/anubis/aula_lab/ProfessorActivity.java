@@ -6,6 +6,7 @@ import android.widget.TextView;
 
 public class ProfessorActivity extends AppCompatActivity {
 
+
     private TextView txtProfessorMsg;
 
     @Override
@@ -16,7 +17,7 @@ public class ProfessorActivity extends AppCompatActivity {
         txtProfessorMsg = (TextView) findViewById(R.id.professor_msg);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            String nome = extras.getString("nome");
+            String nome = extras.getString(MainActivity.PESSOA_NOME);
             txtProfessorMsg.setText("Hello " + nome + '.');
         }
     }
