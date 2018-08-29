@@ -23,5 +23,13 @@ public class ProfessorActivity extends AppCompatActivity {
         }
 
         Toast.makeText(getApplicationContext(),"Proffesor onCreate()", Toast.LENGTH_SHORT).show();
+
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        Toast.makeText(getApplicationContext(),"Exiting ProfessorActivity onDestroy()", Toast.LENGTH_SHORT).show();
+        super.onDestroy();
     }
 }
