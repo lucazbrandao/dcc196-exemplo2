@@ -11,9 +11,9 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView nomecompleto;
-    Button btnProfessor;
+    private Button btnProfessor;
     Button btnStudent;
-    EditText nome;
+    private EditText edtNome;
     EditText sobrenome;
 
     @Override
@@ -21,14 +21,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        edtNome = (EditText) findViewById(R.id.edit_name);
+
         btnProfessor = (Button) findViewById(R.id.btn_professor);
         btnProfessor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ProfessorActivity.class);
+                intent.putExtra("nome", edtNome.getText().toString());
                 startActivity(intent);
             }
         });
+
+
 
     }
 }
