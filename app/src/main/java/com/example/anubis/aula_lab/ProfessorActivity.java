@@ -3,6 +3,7 @@ package com.example.anubis.aula_lab;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ProfessorActivity extends AppCompatActivity {
 
@@ -20,5 +21,7 @@ public class ProfessorActivity extends AppCompatActivity {
             String nome = extras.getString(MainActivity.PESSOA_NOME);
             txtProfessorMsg.setText("Hello " + nome + '.');
         }
+
+        Toast.makeText(getApplicationContext(),"Proffesor onCreate()", Toast.LENGTH_SHORT).show();
     }
 }
