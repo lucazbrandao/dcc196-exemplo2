@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edt_siape"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="42dp"
@@ -26,14 +26,14 @@
         android:layout_marginStart="42dp"
         android:layout_marginTop="102dp"
         android:ems="10"
+        android:hint="Your SIAPE"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_confirm"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="42dp"
@@ -41,8 +41,8 @@
         android:layout_marginRight="42dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="56dp"
-        android:text="Button"
+        android:text="Confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_siape" />
 </android.support.constraint.ConstraintLayout>
